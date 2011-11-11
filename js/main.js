@@ -248,14 +248,14 @@ window.addEventListener("DOMContentLoaded", function() {
 		var getlname = $('lname');
 		var getemail = $('email');
 
-/*		errmsg.innerHTML = "";
+	errmsg.innerHTML = "";
 		getgroup.style.border = "1px solid black";
 		getfname.style.border = "1px solid black";
 		getlname.style.border = "1px solid black";
 		getemail.style.border = "1px solid black";
-*/
+
 		var messagearray = [];
-		if(getgroup.value === "Please Select One") {
+		if(getgroup.value === "") {
 			var grouperror = 'Please Choose a Ministry Option.';
 			getgroup.style.border = "3px solid red";
 			messagearray.push(grouperror);
@@ -309,4 +309,9 @@ window.addEventListener("DOMContentLoaded", function() {
 	var save = $('submit');
 
 	save.addEventListener("click", validate);
+});
+$("#minsignup").validate({
+    submitHandler: function(form) {
+        console.log("Call Action");
+    }
 });

@@ -155,8 +155,8 @@
 	<div data-role="navbar" data-theme='c'>
 		<ul>
 			<li><a href="https://github.com/Matttoft/MIU1111">REPO</a></li>
-			<li><a href="http://matttoft.github.com/MIU1111/index-wrong.html">WRONG</a></li>
-			<li><a href="http://matttoft.github.com/MIU1111/index.html">GOOD</a></li>
+			<li><a href="http://matttoft.github.com/matttoft-MIU-1111/index-wrong.html">WRONG</a></li>
+			<li><a href="http://matttoft.github.com/matttoft-MIU-1111/index.html">GOOD</a></li>
 		</ul>
 	</div><!-- /navbar -->
 </div><!-- /footer -->
@@ -1304,54 +1304,7 @@
 				
 				
 		<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
-			
-<script type="text/javascript">
-$.validator.setDefaults({
-	submitHandler: function() { alert("submitted!"); }
-});
 
-$().ready(function() {
-	
-	// validate signup form on keyup and submit
-	$("#minsignup").validate({
-		rules: {
-			fname: "required",
-			lname: "required",
-			
-			email: {
-				required: true,
-				email: true,
-			},
-			tel: {
-				required: true,
-				minlength: 12,
-			},
-			dropdown: "required",
-		},
-		messages: {
-			fname: "Please enter your firstname",
-			lname: "Please enter your lastname",
-			tel: "Please enter you telephone number like this 555-555-5555",
-			email: "Please enter a valid email address",
-			dropdown: "Please select a ministry",
-		},
-	});
-
-});
-</script>
-
-<style type="text/css">
-#commentForm { width: 500px; }
-#commentForm label { width: 250px; }
-#commentForm label.error, #commentForm input.submit { margin-left: 253px; }
-#minsignup { width: 670px; }
-#minsignup label.error {
-	margin-left: 10px;
-	width: auto;
-	display: inline;
-}
-
-</style>
 			
 		<center>	<div data-role="header" id="header">
 				<center><img src="img/logo.gif" /></center>
@@ -1364,7 +1317,7 @@ $().ready(function() {
 				
 			<h2>Sign Up For a Ministry</h2>
 				
-			<form class="cmxform" method='get' action="" id="minsignup">
+			<form class="cmxform" method='post' action="" id="minsignup">
 			<fieldset>
 					
 				<div data-role="fieldcontain">
@@ -1444,8 +1397,7 @@ $().ready(function() {
 							</optgroup>
 						</select>
 					</label>
-				</div></center>
-			
+				</div>
 		
 				<div data-role="fieldcontain">
 					<input type="submit" id='submit' value="Submit" data-theme="c" data-icon="check" data-iconpos="right" />
@@ -1465,10 +1417,10 @@ $().ready(function() {
 		</div>
 		
 <script type="text/javascript" src="js/json.js"></script>				
-			
+<script type="text/javascript" src="js/main.js"></script>				
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
-
+<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 			
 	
 
