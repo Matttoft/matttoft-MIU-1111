@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="css/ps/style.css"/>
 		<link rel="stylesheet" href="css/ps/jquery-mobile.css"/>
 		<link rel="stylesheet" href="css/ps/photoswipe.css"/>
-		<link rel="stylesheet" type="text/css" href="css/indexstylewrong.css" />
+		<link rel="stylesheet" type="text/css" src="css/indexstylewrong.css" />
 		
 	
 		<script src="js/libs/modernizr.custom.min.js"></script>
@@ -30,7 +30,7 @@
 	<body>
 		
 		
-		<div data-role="page" id="main" data-theme="a">
+		<div data-role="page" id="mainwrong" data-theme="e">
 			<div data-role="header" id="header">
 				<h1>WRONG AXIS MINISTRY APP</h1>
 			</div>
@@ -39,11 +39,11 @@
 					<center> <img src="img/logo.gif" /> </center>
 				</div>
 				
-		<div data-theme='a'>
-					<center><a data-theme='c' data-role="button" href='#search'>Search</a></center>
+		<div data-theme='f'>
+					<center><a data-theme='e' data-role="button" href='#search'>Search</a></center>
 					</div>
-		<div data-theme='a'>
-					<center><a data-theme='c' data-role="button" href='#news'>Ministry News</a></center>
+		<div data-theme='e'>
+					<center><a data-theme='d' data-role="button" href='#news'>Ministry News</a></center>
 					</div>
 				
 			
@@ -57,32 +57,32 @@
 			<div data-role="content">
 		<ul class="gallery">
 			<li><a href="#impressions" rel="external"><img src="img/Impressions.gif" alt="Impressions"/></a>
-			<p style="text-align:center;">
+			<p id="imp" style="text-align:center;">
 				Impressions
 			</p>
 			</li>
 			<li><a href="#usher" rel="external"><img src="img/Usher.gif" alt="Usher"/></a>
-			<p style="text-align:center;">
+			<p id='ush'style="text-align:center;">
 				Usher
 			</p>
 			</li>
 			<li><a href="#worship" rel="external"><img src="img/Worship.gif" alt="Worship"/></a>
-			<p style="text-align:center;">
+			<p id='wor' style="text-align:center;">
 				Worship
 			</p>
 			</li>
 			<li><a href="#tech" rel="external"><img src="img/Tech.gif" alt="Tech"/></a>
-			<p style="text-align:center;">
+			<p id='tec' style="text-align:center;">
 				Tech
 			</p>
 			</li>
 			<li><a href="#nursery" rel="external"><img src="img/Nursery.gif" alt="Nursery"/></a>
-			<p style="text-align:center;">
+			<p id='nur' style="text-align:center;">
 				Nursery
 			</p>
 			</li>
 			<li><a href="#all" rel="external"><img src="img/logo.gif" alt="View All"/></a>
-			<p style="text-align:center;">
+			<p id='all' style="text-align:center;">
 				View All
 			</p>
 			</li>
@@ -91,7 +91,7 @@
 	</div>
 					<br>
 					<nav>
-				<a button type="button" href="#additem">SIGN UP</a>
+				<a data-theme='b' button type="button" href="#additem">SIGN UP</a>
 			</nav>
 			
 					
@@ -100,9 +100,9 @@
 							<div data-role="footer">		
 	<div data-role="navbar" data-theme='c'>
 		<ul>
-			<li><a href="https://github.com/Matttoft/MIU1111">REPO</a></li>
-			<li><a href="http://matttoft.github.com/matttoft-MIU-1111/index-wrong.html">WRONG</a></li>
-			<li><a href="http://matttoft.github.com/matttoft-MIU-1111/index.html">GOOD</a></li>
+			<li><a data-theme='c' href="https://github.com/Matttoft/MIU1111">REPO</a></li>
+			<li><a data-theme='e' href="http://matttoft.github.com/matttoft-MIU-1111/index-wrong.html">WRONG</a></li>
+			<li><a data-theme='c' href="http://matttoft.github.com/matttoft-MIU-1111/index.html">GOOD</a></li>
 		</ul>
 	</div><!-- /navbar -->
 </div><!-- /footer -->
@@ -112,10 +112,7 @@
 		</div> 
 <div data-role="page" id="impressions" data-add-back-btn="true" data-theme="a">
 			
-			<div data-role="header" data-position="fixed" id="header">
-				<center> <img src="img/logo.gif"/> </center>
-				</div>
-					
+			
 								
 				<ul data-role="listview" data-theme="a" data-filter="true">
 					<li>
@@ -137,10 +134,7 @@
 			
 			<div data-role="page" id="usher" data-add-back-btn="true" data-theme="a">
 			
-			<div data-role="header" data-position="fixed" id="header">
-				<center> <img src="img/logo.gif"/> </center>
-				</div>
-					
+			
 								
 				<ul data-role="listview" data-theme="a" data-filter="true">
 					<li>
@@ -163,10 +157,7 @@
 			
 			<div data-role="page" id="worship" data-add-back-btn="true" data-theme="a">
 			
-			<div data-role="header" data-position="fixed" id="header">
-				<center> <img src="img/logo.gif"/> </center>
-				</div>
-					
+			
 								
 				<ul data-role="listview" data-theme="a" data-filter="true">
 					<li>
@@ -189,9 +180,7 @@
 						
 			<div data-role="page" id="tech" data-add-back-btn="true" data-theme="a">
 			
-			<div data-role="header" data-position="fixed" id="header">
-				<center> <img src="img/logo.gif"/> </center>
-				</div>
+		
 					
 								
 				<ul data-role="listview" data-theme="a" data-filter="true">
@@ -214,10 +203,7 @@
 			
 			<div data-role="page" id="nursery" data-add-back-btn="true" data-theme="a">
 			
-			<div data-role="header" data-position="fixed" id="header">
-				<center> <img src="img/logo.gif"/> </center>
-				</div>
-					
+			
 								
 				<ul data-role="listview" data-theme="a" data-filter="true">
 					<li>
@@ -239,9 +225,6 @@
 			
 			<div data-role="page" id="all" data-add-back-btn="true" data-theme="a">
 			
-			<div data-role="header" data-position="fixed" id="header">
-				<center> <img src="img/logo.gif"/> </center>
-				</div>
 					
 			
 				<ul data-role="listview" data-theme="a" data-filter="true">
@@ -428,9 +411,6 @@
 			
 			<div data-role="page" id="news" data-add-back-btn="true" data-theme="a">
 			
-			<div data-role="header" data-position="fixed" id="header">
-				<center> <img src="img/logo.gif"/> </center>
-				</div>
 					
 			
 				<ul data-role="listview" data-theme="a" data-filter="true">
@@ -1295,9 +1275,9 @@
 		<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
 
 			
-		<center>	<div data-role="header" id="header">
-				<center><img src="img/logo.gif" /></center>
-				<a href="#main" data-rel="back" data-icon="home" class="ui-btn-left" data-theme="a">Home</a>
+		<center>	<div>
+				
+				<a data-role='button' href="#mainwrong" data-rel="back" data-icon="home" class="ui-btn-left" data-theme="b">Home</a>
 			</div>
 			
 			
@@ -1389,8 +1369,8 @@
 				</div>
 		
 				<div data-role="fieldcontain">
-					<input type="submit" id='submit' value="Submit" data-theme="c" data-icon="check" data-iconpos="right" />
-					<input type="reset" value="Reset" data-theme="d" data-icon="back" data-iconpos="right" />
+					<input type="submit" id='submit' value="Submit" data-theme="b" data-icon="check" data-iconpos="right" />
+					<input type="reset" value="Reset" data-theme="e" data-icon="back" data-iconpos="right" />
 				</div>
 				
 			</fieldset>	
